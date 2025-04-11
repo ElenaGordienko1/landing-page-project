@@ -24,7 +24,7 @@ fonts/ - шрифты
 
 1.Клонировать репозиторий:
 
-git clone 
+git clone https://github.com/ElenaGordienko1/landing-page-project.git
 
 2.Перейти в директорию проекта:
 
