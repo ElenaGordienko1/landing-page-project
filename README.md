@@ -24,12 +24,13 @@ fonts/ - шрифты
 
 1.Клонировать репозиторий:
 
+```sh
 git clone https://github.com/ElenaGordienko1/landing-page-project.git
-
+```
 2.Перейти в директорию проекта:
-
+```sh
 cd landing-page-project
-
+```
 
 1. Открытие проекта в VS Code
    
