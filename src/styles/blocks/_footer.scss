@@ -1,0 +1,44 @@
+.footer {
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0px;
+    }
+
+    &__addition {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #323231B2;
+        font-family: var(--font-family-base);
+        font-weight: 400;
+
+        @include mobile {
+            border-top: 1px solid #E9E9E7;
+            padding-top: 24px;
+            flex-direction: column-reverse;
+            gap: 16px;
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__header-inner {
+        @include mobile {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import
+    'normalize', 
+    'fonts', 
+    'mixins', 
+    'media', 
+    'variables', 
+    'utils', 
+    'globals';
+
+@import 
+    'blocks/button',
+    'blocks/burger-button',
+    'blocks/mobile-overlay',
+    'blocks/header',
+    'blocks/cross-button',
+    'blocks/hero',
+    'blocks/about-us',
+    'blocks/reason',
+    'blocks/form',
+    'blocks/skills',
+    'blocks/languages',
+    'blocks/courses',
+    'blocks/stock',
+    'blocks/license',
+    'blocks/price',
+    'blocks/contacts',
+    'blocks/carousel',
+    'blocks/reviews',
+    'blocks/quiz',
+    'blocks/footer';

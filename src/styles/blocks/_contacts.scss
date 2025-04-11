@@ -1,0 +1,257 @@
+.contacts {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    &__body {
+        display: flex;
+        gap: 16px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__pice {
+        position: absolute;
+        z-index: 10;
+        left: 475px;
+        bottom: 350px;
+
+        @include mobile {
+            left: 270px;
+            width: 51px;
+            bottom: 380px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        width: 663px;
+        height: 413px;
+        gap: 24px;
+        font-family: var(--font-family-base);
+        font-weight: 400;
+
+        @include mobile {
+            width: 328px;
+        }
+
+        &-title {
+            width: 663px;
+            height: 52px;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: 0%;
+            font-family: var(--font-family-base);
+            font-weight: 400;
+
+            @include mobile {
+                width: 328px;
+            }
+        }
+
+        &-tel {
+            display: flex;
+            width: 393px;
+            height: 58px;
+            gap: 16px;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            flex-direction: column;
+            font-family: var(--font-family-base);
+            font-weight: 400;
+
+            @include mobile {
+                width: 328px;
+            }
+        }
+
+        &-adress {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            font-family: var(--font-family-base);
+            font-weight: 400;
+        }
+    }
+
+    &__adress-point {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-family: var(--font-family-base);
+        font-weight: 400;
+    }
+
+    &__adress-name {
+        display: flex;
+        gap: 16px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        font-family: var(--font-family-base);
+        font-weight: 400;
+    }
+
+    &__adress-title {
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        font-family: var(--font-family-base);
+        font-weight: 400;
+    }
+
+    &__tel-long {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__tel-short {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFE8C7;
+        width: 541px;
+        height: 413px;
+        gap: 40px;
+        border-radius: 40px;
+
+        @include mobile {
+            width: 328px;
+        }
+
+        &-title {
+            width: 461px;
+            height: 25px;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            font-family: var(--font-family-base);
+            font-weight: 400;
+
+            @include mobile {
+                width: 280px;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+        }
+
+        &-name {
+            width: 218.5px;
+            height: 27px;
+            gap: 4px;
+            background-color: #FFE8C7;
+            border: none;
+            border-bottom: 2px solid var(--color-dark);
+            padding: 0px;
+
+            @include mobile {
+                width: 288px;
+            }
+        }
+
+        &-phone {
+            width: 218.5px;
+            height: 27px;
+            gap: 4px;
+            background-color: #FFE8C7;
+            border: none;
+            border-bottom: 2px solid var(--color-dark);
+            padding: 0px;
+
+            @include mobile {
+                width: 288px;
+            }
+        }
+
+        &-subject {
+            width: 461px;
+            height: 24px;
+            gap: 4px;
+            background-color: #FFE8C7;
+            border: none;
+            border-bottom: 2px solid var(--color-dark);
+
+            @include mobile {
+                width: 288px;
+            }
+        }
+
+        &-personal {
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            width: 461px;
+            height: 36px;
+            font-family: var(--font-family-base);
+            font-weight: 400;
+
+            @include mobile {
+                width: 280px;
+            }
+        }
+
+        &-link {
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #2258E1;
+            font-family: var(--font-family-base);
+            font-weight: 400;
+        }
+
+        &-button {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            @include mobile {
+                width: 280px;
+            }
+        }
+    }
+
+    &__description {
+        width: 461px;
+        height: 21px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        font-family: var(--font-family-base);
+        font-weight: 400;
+
+        @include mobile {
+            width: 285px;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+    }
+
+    &__login {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 461px;
+
+        @include mobile {
+            width: 288px;
+        }
+    }
+
+    &__button-sign {
+        width: 461px;
+    }
+}

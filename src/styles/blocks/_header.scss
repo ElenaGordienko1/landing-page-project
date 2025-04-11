@@ -1,0 +1,74 @@
+.header {
+    background-color: var(--color-light-alt);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 192px;
+        padding-right: 0px;
+        padding-left: 0px;
+        border-bottom: 1px solid var(--color-gray);
+
+        @include desktop {
+            column-gap: 24px;
+        }
+
+        @include mobile {
+            column-gap: 140px;
+            height: 56px;
+        }
+    }
+
+    .logo {
+        &__image {
+            @include mobile {
+                max-width: 148px;
+                max-height: 40px;
+            }
+        }
+    }
+
+    &__menu {
+        font-size: 14px;
+        font-family: var(--font-family-base);
+        font-weight: 400;
+
+        &-list {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            column-gap: 24px;
+            white-space: nowrap;
+        }
+
+        &-link {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            height: 49px;
+            color: var(--color-dark-alt);
+            font-family: var(--font-family-base);
+            font-weight: 400;
+
+            &:hover {
+                color: var(--color-accent);
+            }
+        }
+    }
+
+    &__contact {
+        white-space: nowrap;
+        font-family: var(--font-family-base);
+        font-weight: 400;
+
+        @include desktop {
+            white-space: normal;
+        }
+    }
+}

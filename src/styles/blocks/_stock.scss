@@ -1,0 +1,147 @@
+.stock {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__title {
+      font-size: 36px;
+      line-height: 52px;
+      letter-spacing: 0%;
+      margin-bottom: 24px;
+      font-family: var(--font-family-base);
+      font-weight: 400;
+  
+      @include mobile {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+      }
+    }
+  
+    &__row {
+      display: flex;
+      grid-gap: 16px;
+      margin-bottom: 40px;
+  
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+  
+    &__block-fon {
+      position: absolute;
+    }
+  
+    &__block-body {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 389px;
+      height: 221px;
+      gap: 24px;
+  
+      @include mobile {
+        width: 328px;
+        height: 158px;
+        gap: 16px;
+      }
+    }
+  
+    &__block-image1 {
+      @include mobile {
+        width: 60px;
+        height: 60px;
+        border-top-right-radius: 27px;
+        border-bottom-right-radius: 27px;
+        border-bottom-left-radius: 27px;
+      }
+    }
+  
+    &__block-image2 {
+      @include mobile {
+        width: 60px;
+        height: 60px;
+        border-top-left-radius: 27px;
+        border-bottom-right-radius: 27px;
+        border-bottom-left-radius: 27px;
+      }
+    }
+  
+    &__block-image3 {
+      @include mobile {
+        width: 60px;
+        height: 60px;
+        border-top-left-radius: 27px;
+        border-top-right-radius: 27px;
+        border-bottom-right-radius: 27px;
+      }
+    }
+  
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+  
+    &__block1 {
+      width: 389px;
+      height: 221px;
+      border-radius: 40px;
+      background-color: var(--color-brown);
+  
+      @include mobile {
+        width: 328px;
+        height: 158px;
+        border-radius: 24px;
+      }
+    }
+  
+    &__block2 {
+      display: flex;
+      justify-content: center;
+      width: 389px;
+      height: 221px;
+      border-radius: 40px;
+      background-color: var(--color-violet);
+  
+      @include mobile {
+        width: 328px;
+        height: 158px;
+        border-radius: 24px;
+      }
+    }
+  
+    &__block3 {
+      display: flex;
+      justify-content: center;
+      width: 389px;
+      height: 221px;
+      border-radius: 40px;
+      background-color: var(--color-yellow);
+  
+      @include mobile {
+        width: 328px;
+        height: 158px;
+        border-radius: 24px;
+      }
+    }
+  
+    &__button-sign {
+      @include mobile {
+        width: 270px;
+        height: 46px;
+      }
+    }
+  }
+  

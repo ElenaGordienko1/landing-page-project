@@ -1,0 +1,25 @@
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 160px;
+
+    @include mobile{
+        margin-bottom: 0px;
+    }
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    transition: transform 0.3s linear;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 auto;
+    margin-right: 8px;
+    list-style: none;
+  }
+  
+  .carousel-slide img {
+    height: 212px;
+  }

@@ -1,0 +1,215 @@
+.courses {
+  background-color: var(--color-light-alt);
+  position: relative;
+  overflow: hidden;
+  --fon-offset: 80px;
+
+  &__body {
+      position: relative;
+      z-index: 2;
+      padding-bottom: 80px;
+      display: flex;
+      flex-direction: column;
+      grid-gap: 40px;
+      align-items: center;
+      padding-top: var(--fon-offset);
+
+      @include mobile {
+          padding-bottom: 40px;
+          padding-top: 24px;
+          grid-gap: 24px;
+      }
+  }
+
+  &__top {
+      position: relative;
+  }
+
+  &__wave {
+      position: absolute;
+      z-index: 6;
+      left: 100px;
+      top: 40px;
+
+      @include mobile {
+          top: 30px;
+          width: 105px;
+          left: 70px;
+      }
+  }
+
+  &__fon {
+      position: absolute;
+      top: calc(var(--fon-offset) * -1);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1360px;
+      height: 625px;
+      z-index: 1;
+      pointer-events: none;
+
+      @include mobile {
+          width: 300px;
+          height: auto;
+      }
+  }
+
+  &__title {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      font-size: 36px;
+      line-height: 52px;
+      white-space: nowrap;
+      font-family: var(--font-family-base);
+      font-weight: 400;
+
+      @include mobile {
+          font-size: 24px;
+          line-height: 32px;
+          white-space: normal;
+      }
+  }
+
+  &__grid {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      grid-gap: 16px;
+
+      @include mobile {
+          gap: 12px;
+          width: 360px;
+      }
+  }
+
+  &__cell {
+      z-index: 2;
+      align-items: center;
+      background-color: var(--color-light);
+      border-radius: 40px;
+      width: 389px;
+      height: 223px;
+      display: flex;
+      flex-direction: column;
+
+      @include mobile {
+          width: calc(50% - 6px);
+          height: auto;
+          border-radius: 24px;
+          width: 158px;
+          height: 152px;
+      }
+
+      &-image {
+          margin-top: 24px;
+          margin-left: 4px;
+
+          @include mobile {
+              width: 60px;
+              height: auto;
+              margin-top: 16px;
+              margin-left: 0px;
+          }
+      }
+
+      &-title {
+          font-size: 16px;
+          line-height: 100%;
+          width: 341px;
+          height: 23px;
+          margin-left: 24px;
+          margin-bottom: 16px;
+          font-family: var(--font-family-base);
+          font-weight: 400;
+
+          @include mobile {
+              font-size: 14px;
+              width: 134px;
+              text-align: center;
+              margin: 0px;
+              margin-bottom: 12px;
+          }
+      }
+
+      &-description {
+          width: 341px;
+          height: 80px;
+          font-size: 14px;
+          line-height: 20px;
+          margin-left: 24px;
+          margin-bottom: 24px;
+          font-family: var(--font-family-base);
+          font-weight: 400;
+
+          @include mobile {
+              display: none;
+              font-size: 12px;
+              line-height: 16px;
+              margin-top: 8px;
+          }
+
+          &.visible {
+              display: block;
+          }
+      }
+
+      &-toggle {
+          display: none;
+
+          @include mobile {
+              display: inline-block;
+              background: none;
+              border: none;
+              color: var(--color-dark);
+              font-size: 14px;
+              cursor: pointer;
+              font-family: var(--font-family-base);
+              font-weight: 400;
+          }
+      }
+  }
+
+  &__button {
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-gap: 16px;
+
+      @include mobile {
+          gap: 12px;
+      }
+
+      &-download {
+          display: flex;
+          align-items: center;
+          grid-gap: 4px;
+          font-size: 14px;
+          line-height: 100%;
+          font-family: var(--font-family-base);
+          font-weight: 400;
+
+          @include mobile {
+              font-size: 12px;
+              flex-wrap: wrap;
+              justify-content: center;
+              text-align: center;
+          }
+      }
+  }
+
+  &__button-sign {
+      @include mobile {
+          width: 270px;
+      }
+  }
+
+  &__download-txt {
+      @include mobile {
+          width: 270px;
+      }
+  }
+}

@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Учебная империя</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="/" class="header__logo logo">
+                <img class="logo__image" src="./images/logo.svg" alt="Учебная империя" width="273" height="52" loading="lazy">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Курсы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Цены</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Акции</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Отзывы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="tel: +7 (914) 704-36-66" class="header__contact contact hidden-mobile"> +7 (914) 704-36-66 </a>
+            <button 
+                class="button__burger-menu burger-button visible-mobile"
+                type="button"
+                onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="content">
+        <section class="section">
+            <div class="hero">
+                <div class="hero__inner container">
+                    <div class="hero__main">
+                        <img src="./images/fon.svg" alt="" class="hero__fon" width="686" height="432" loading="lazy">
+                        <div class="hero__body">
+                            <div class="hero__text">
+                                <div class="hero__achievement">
+                                    <img src="./images/medal.svg" alt="" class="hero__achievement-image">
+                                    <p>Репетиторский центр №1 в Приморском крае</p>
+                                </div>
+                                <div class="hero__title">
+                                    <h1>Репетиторы <span class="hero__highlighted">по всем
+                                        <img src="./images/underlining.svg" alt="" class="hero__underlining" width="474" height="396" loading="lazy">
+                                        </span>
+                                        школьным предметам во  всех районах Владивостока
+                                    </h1>
+                                </div>
+                                <div class="hero__description">
+                                    <p>Современный центр дополнительного образования с широкими возможностями</p>
+                                </div>
+                            </div>
+                            <div class="hero__addition">
+                                <div class="hero__button">
+                                    <button class="hero__button-sign button__sign">Записаться</button>
+                                    <button class="hero__button-sign button__sign button__sign--transparent">Смотреть отзывы</button>
+                                </div>
+                                <div class="hero__addition-text">
+                                    <ul class="hero__addition-text-list">
+                                        <li class="hero__addition-text-item">
+                                            <p>1 000 ₽ в подарок за первое занятие</p>
+                                        </li>
+                                        <li class="hero__addition-text-item">
+                                            <p>Оплата материнским капиталом</p>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__image">
+                            <img src="./images/main-photo.svg" alt="" class="hero__image-main" width="474" height="396" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section__body">
+                <div class="about-us">
+                    <div class="about-us__reason reason">
+                        <div class="reason__image">
+                            <div class="reason__image-small">
+                              <div class="reason__image-photo1-wrapper">
+                                <img src="./images/photo1.svg" alt="" class="reason__image-photo1" loading="lazy" />
+                                <img src="./images/highlight_sparkle_min.svg" alt="" class="reason__highlight_sparkle_min" loading="lazy" />
+                              </div>
+                              <div class="reason__image-photo2-wrapper">
+                                <img src="./images/photo2.svg" alt="" class="reason__image-photo2" loading="lazy" />
+                                <img src="./images/pice.svg" alt="" class="reason__pice" loading="lazy" />
+                              </div>
+                            </div>
+                            <div class="reason__image-photo3-wrapper">
+                              <img src="./images/photo3.svg" alt="" class="reason__image-photo3" loading="lazy" />
+                              <img src="./images/highlight_sparkle_max.svg" alt="" class="reason__highlight_sparkle_max" loading="lazy" />
+                            </div>
+                          </div>                          
+                        <div class="reason__body">
+                            <div class="reason__text">
+                                <h1 class="reason__title">Почему выбирают <span class="reason__highlighted">нас?
+                                    <img src="./images/circle.svg" alt="" class="reason__circle" width="130" height="50" loading="lazy">
+                                    </span></h1>
+                                <p class="reason__description">Наши преподаватели - молодые выпускники профильных ВУЗов, победители региональных олимпиад с результатами ЕГЭ выше 90 баллов.</p>
+                                <p class="reason__description">Программа обучения разрабатывается индивидуально и соответствует требованиям ФГОС.</p>
+                            </div>
+                            <div class="reason__advantage">
+                                <ul class="reason__advantage-list">
+                                    <li class="reason__advantage-main">
+                                        <h3 class="reason__advantage-title">2 000 м2 +</h3>
+                                        <p class="reason__advantage-description">Образовательного пространства</p>
+                                    </li>
+                                    <li class="reason__advantage-item">
+                                        <h3 class="reason__advantage-title">5+</h3>
+                                        <p class="reason__advantage-description">Филиалов</p>
+                                    </li>
+                                    <li class="reason__advantage-item">
+                                        <h3 class="reason__advantage-title">100+</h3>
+                                        <p class="reason__advantage-description">Кабинетов</p>
+                                    </li>
+                                    <li class="reason__advantage-item">
+                                        <h3 class="reason__advantage-title">10+<h3>
+                                        <p class="reason__advantage-description">Лет на рынке</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reason__rating">
+                                <p class="reason__rating-text">Что говорят родители и ученики?</p>
+                                <div class="reason__rating-item">
+                                    <img src="./images/vl.svg" alt="" class="reason__rating-image" width="107" height="44" loading="lazy">
+                                    <img src="./images/2gis.svg" alt="" class="reason__rating-image" width="107" height="44" loading="lazy">
+                                    <img src="./images/yandex.svg" alt="" class="reason__rating-image" width="107" height="44" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="reason__button">
+                                <div class="button">
+                                    <button class="reason__button-sign button__sign">Записаться</button>
+                                    <a href="/" class="button__whatsapp">
+                                        <img class="button-whatsapp__image" src="./images/wp.svg" alt="" width="32" height="32" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="reason__button-download">
+                                    <img src="./images/document.svg" alt="" width="16" height="19" loading="lazy">
+                                    <a href="/" download>Образцы документов</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz">
+                        <div class="quiz__inner">
+                          <h2 class="quiz__title">Пройдите опрос и получите скидку 2 000 ₽</h2>
+                      
+                          <form class="quiz__form" id="quizForm">
+                            <div class="quiz__step" data-step="1">
+                              <p class="quiz__question">По какому предмету испытываете трудности?</p>
+                              <div class="quiz__progress">
+                                <div class="quiz__progress-bar" style="width: 20%"></div>
+                              </div>
+                              <div class="quiz__step1">
+                                <div class="quiz__step1-block">
+                                    <label><input type="checkbox" name="subject" value="Русский"> Русский</label>
+                                    <label><input type="checkbox" name="subject" value="Математика"> Математика</label>
+                                    <label><input type="checkbox" name="subject" value="История"> История</label>
+                                    <label><input type="checkbox" name="subject" value="Обществознание"> Обществознание</label>
+                                    <label><input type="checkbox" name="subject" value="Физика"> Физика</label>
+                                  </div>
+                                  <div class="quiz__step1-block2">
+                                    <label><input type="checkbox" name="subject" value="Химия">Химия</label>
+                                    <label><input type="checkbox" name="subject" value="Биология"> Биология</label>
+                                    <label><input type="checkbox" name="subject" value="Английский"> Английский</label>
+                                    <label><input type="checkbox" name="subject" value="Китайский"> Китайский</label>
+                                    <label><input type="checkbox" name="subject" value="Корейский"> Корейский</label>
+                                  </div>
+                                  <div class="quiz__step1-block3">
+                                    <label><input type="checkbox" name="subject" value="Японский">Японский</label>
+                                    <label><input type="checkbox" name="subject" value="Информатика">Информатика</label>
+                                    <label><input type="checkbox" name="subject" value="Литература">Литература</label>
+                                    <label><input type="checkbox" name="subject" value="Подготовка к школе"> Подготовка к школе</label>
+                                    <label><input type="checkbox" name="subject" value="Начальные классы"> Начальные классы</label>
+                                  </div>
+                              </div>
+                              <div class="quiz__nav">
+                                <button type="button" class="quiz__next">Далее</button>
+                              </div>
+                            </div>
+                      
+                            <div class="quiz__step" data-step="2" hidden>
+                              <p class="quiz__question">Как вы оцениваете уровень знаний?</p>
+                              <div class="quiz__progress">
+                                <div class="quiz__progress-bar" style="width: 20%"></div>
+                              </div>
+                              <div class="quiz__step2">
+                                <div class="quiz__step1-block">
+                                    <label><input type="checkbox" name="subject" value="Вообще ничего не знаю"> Вообще ничего не знаю</label>
+                                    <label><input type="checkbox" name="subject" value="Немного знаю"> Немного знаю</label>
+                                    <label><input type="checkbox" name="subject" value="Разбираюсь посредственно"> Разбираюсь посредственно</label>
+                                    <label><input type="checkbox" name="subject" value="Имею фундаментальные знания"> Имею фундаментальные знания</label>
+                                    <label><input type="checkbox" name="subject" value="Гений"> Гений</label>
+                                  </div>
+                              </div>
+                              <div class="quiz__nav">
+                                <button type="button" class="quiz__prev">Назад</button>
+                                <button type="button" class="quiz__next">Далее</button>
+                              </div>
+                            </div>
+                      
+                            <div class="quiz__step" data-step="3" hidden>
+                              <p class="quiz__question">Как давно испытываете трудности?</p>
+                              <div class="quiz__progress">
+                                <div class="quiz__progress-bar" style="width: 20%"></div>
+                              </div>
+                              <div class="quiz__step3">
+                                <div class="quiz__step3-block">
+                                    <label><input type="checkbox" name="subject" value="более 3 лет"> более 3 лет</label>
+                                    <label><input type="checkbox" name="subject" value="от 1 года до 3 лет"> от 1 года до 3 лет</label>
+                                    <label><input type="checkbox" name="subject" value="только последний год"> только последний год</label>
+                                    <label><input type="checkbox" name="subject" value="последние темы"> последние темы</label>
+                                  </div>
+                              </div>
+                              <div class="quiz__nav">
+                                <button type="button" class="quiz__prev">Назад</button>
+                                <button type="button" class="quiz__next">Далее</button>
+                              </div>
+                            </div>
+                      
+                            <div class="quiz__step" data-step="4" hidden>
+                              <p class="quiz__question">Укажите имя и телефон, мы перезвоним для подтверждения записи</p>
+                              <div class="quiz__input">
+                                <div class="input-wrapper">
+                                  <input type="text" name="name" id="nameInput" placeholder=" " required>
+                                  <label for="nameInput">Имя (обязательно)</label>
+                                </div>
+                              
+                                <div class="input-wrapper">
+                                  <input type="tel" name="phone" id="phoneInput" placeholder=" " required>
+                                  <label for="phoneInput">Телефон (обязательно)</label>
+                                </div>
+                              </div>
+                              <p class="contacts__form-personal quiz__form-personal">
+                                Нажимая на кнопку “Отправить”, Вы даете согласие на обработку
+                                <a href="#" class="contacts__form-link">персональных данных</a>.
+                                </p>
+                              <div class="quiz__nav">
+                                <button type="button" class="quiz__prev">Назад</button>
+                                <button type="button" class="quiz__next">Отправить</button>
+                              </div>
+                            </div>
+                      
+                            <div class="quiz__step" data-step="5" hidden>
+                              <p class="quiz__question">Готово, наш специалист скоро свяжется с вами для уточнения деталей</p>
+                              <p class="quiz__summary-title">Ваши ответы:</p>
+                              <div class="quiz__summary"></div>
+                              <button type="button" class="quiz__restart">Повторить</button>
+                            </div>
+                          </form>
+                        </div>
+                        <img src="./images/quiz.svg" alt="" class="quiz__image">
+                    </div>                      
+                    <div class="about-us__skills skills">
+                        <div class="skills__text">
+                            <div class="skills__top">
+                                <h1 class="skills__title">Чему мы учим?</h1>
+                                <img src="./images/pointer.svg" alt="" class="skills__pointer">
+                            </div>
+                            <p class="skills__description">Подготовка к ЕГЭ, ОГЭ. Более 50 кабинетов для получения знаний по дисциплинам:</p>
+                        </div>
+                        <div class="skills__column">
+                            <div class="skills__subject">
+                                <img src="./images/subject/math-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/math.svg" alt="" class="skills__subject-picture" >
+                                <p class="skills__subject-name">Математика</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/rus-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/rus.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">Русский язык</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/phisic-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/physics.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">Физика</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/chemistry-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/chemistry.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">Химия</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/it-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/it.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">Информатика</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/history-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/history.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">История</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/sochial-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/social.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">Обществознание</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/bio-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/bio.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">Биология</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/literat-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/literat.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">Литература</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/alg-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/alg.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">Алгебра</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/geometry-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/geometry.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">Геометрия</p>
+                            </div>
+                            <div class="skills__subject">
+                                <img src="./images/subject/geography-fon.svg" alt="" class="skills__subject-fon">
+                                <img src="./images/subject/geography.svg" alt="" class="skills__subject-picture">
+                                <p class="skills__subject-name">География</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__languages languages">
+                        <div class="languages__body">
+                            <div class="languages__text">
+                                <h1 class="languages__title"> <span class="hero__highlighted">Иностранные языки
+                                    <img src="./images/red_underline.svg" alt="" class="languages__underlining" width="249" height="15" loading="lazy">
+                                    </span></h1>
+                                <p class="language__description">Для детей и взрослых, подготовка к IELTS, TOEFL, HSK.</p>
+                            </div>
+                            <div class="languages__column">
+                                <div class="languages__name">
+                                    <img src="./images/flags/an.svg" alt="" width="28" height="28" loading="lazy">
+                                    <p>Английский</p>
+                                </div>
+                                <div class="languages__name">
+                                    <img src="./images/flags/ch.svg" alt="" width="28" height="28" loading="lazy">
+                                    <p>Китайский</p>
+                                </div>
+                                <div class="languages__name">
+                                    <img src="./images/flags/jp.svg" alt="" width="28" height="28" loading="lazy">
+                                    <p>Японский</p>
+                                </div>
+                                <div class="languages__name">
+                                    <img src="./images/flags/kr.svg" alt="" width="28" height="28" loading="lazy">
+                                    <p>Корейский</p>
+                                </div>
+                                <div class="languages__name">
+                                    <img src="./images/flags/is.svg" alt="" width="28" height="28" loading="lazy">
+                                    <p>Испанский</p>
+                                </div>
+                            </div>
+                            <div class="languages__button">
+                                <div class="button">
+                                    <button class="languages__button-sign button__sign">Записаться</button>
+                                    <a href="/" class="button__whatsapp">
+                                        <img class="button-whatsapp__image" src="./images/wp.svg" alt="" width="32" height="32" loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="languages__image">
+                            <img src="./images/languague-photo.svg" alt="" width="556" height="332" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__body">
+                <div class="courses">
+                    <div class="courses__inner container">
+                        <img src="./images/course-fon.svg" alt=""  class="courses__fon" loading="lazy">
+                        <div class="courses__body">
+                            <div class="courses__top">
+                                <img src="./images/wave.svg" alt="" class="courses__wave">
+                                <h1 class="courses__title">Наши курсы</h1>
+                            </div>
+                            <div class="courses__grid">
+                                <div class="courses__cell">
+                                    <img src="./images/courses/nach.svg" alt=""  class="courses__cell-image" width="72" height="68" loading="lazy">
+                                    <h3 class="courses__cell-title">Начальные классы </h3>
+                                    <p class="courses__cell-description">Работаем по всем основным программам:
+                                        Планета знаний, 21 век, Школа России, Гармония и другие. Заполняем пробелы, помогаем с ДЗ.</p>
+                                    <button class="courses__cell-toggle">Подробнее</button>
+                                </div>
+                                <div class="courses__cell">
+                                    <img src="./images/courses/school.svg" alt="" class="courses__cell-image" width="72" height="68" loading="lazy">
+                                    <h3 class="courses__cell-title">Школьная программа </h3>
+                                    <p class="courses__cell-description">Заполним пробелы прошлых лет, <br> подтянем успеваемость и привьем  <br>  любовь к учебе.</p>
+                                    <button class="courses__cell-toggle">Подробнее</button>
+                                </div>
+                                <div class="courses__cell">
+                                    <img src="./images/courses/doshcol.svg" alt="" class="courses__cell-image" width="72" height="68" loading="lazy">
+                                    <h3 class="courses__cell-title">Дошкольное образование</h3>
+                                    <p class="courses__cell-description">Занимаемся с детками от 3 лет.Все необходимое для поступления в 1 класс: математика, чтение, письмо, окружающий мир, логика и английский.</p>
+                                    <button class="courses__cell-toggle">Подробнее</button>
+                                </div>
+                                <div class="courses__cell">
+                                    <img src="./images/courses/ege.svg" alt="" class="courses__cell-image" width="72" height="68" loading="lazy">
+                                    <h3 class="courses__cell-title">Подготовка к ЕГЭ </h3>
+                                    <p class="courses__cell-description">В группах (до 5 человек) и индивидуально.Соответствует ФГОС.Усиленная подготовка (дважды в неделю по 1,5ч) для высоких результатов!</p>
+                                    <button class="courses__cell-toggle">Подробнее</button>
+                                </div>
+                                <div class="courses__cell">
+                                    <img src="./images/courses/oge.svg" alt="" class="courses__cell-image" width="72" height="68" loading="lazy">
+                                    <h3 class="courses__cell-title">Подготовка к ОГЭ</h3>
+                                    <p class="courses__cell-description">В группах (до 5 человек) и индивидуально.Соответствует ФГОС.Усиленная подготовка (дважды в неделю по 1,5ч) для высоких результатов!</p>
+                                    <button class="courses__cell-toggle">Подробнее</button>
+                                </div>
+                                <div class="courses__cell">
+                                    <img src="./images/courses/inyaz.svg" alt="" class="courses__cell-image" width="72" height="68" loading="lazy">
+                                    <h3 class="courses__cell-title">Иностранные языки </h3>
+                                    <p class="courses__cell-description">Английский, китайский, корейский, японский.Морской английский
+                                        Деловой английский.Подготовка к TOEFL, IELTS; HSK.</p>
+                                    <button class="courses__cell-toggle">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="courses__button">
+                                <div class="courses__button-link">
+                                    <div class="button">
+                                        <button class="courses__button-sign button__sign">Записаться</button>
+                                        <a href="/" class="button__whatsapp button__whatsapp--transparent">
+                                            <img class="button-whatsapp__image" src="./images/wp.svg" alt="" width="32" height="32" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="courses__button-download">
+                                    <img src="./images/document.svg" alt="" width="16" height="19" loading="lazy">
+                                    <a class="courses__download-txt" href="/" download>Пример образовательной программы (физика, ЕГЭ)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section__body">
+                <div class="stock">
+                    <div class="stock__body">
+                        <h1 class="stock__title">Акции</h1>
+                        <div class="stock__row">
+                            <div class="stock__block1">
+                                <img src="./images/stock/block1-fon.svg" alt="" class="stock__block-fon">
+                                <div class="stock__block-body">
+                                    <img src="./images/stock/block1-icon.svg" alt="" class="stock__block-image1" width="99" height="99" loading="lazy">
+                                    <div class="stock__text">
+                                        <h3 class="stock__text-name">Скидка 10%</h3>
+                                        <p class="stock__text-description">за несколько предметов</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stock__block2">
+                                <img src="./images/stock/block2-fon.svg" alt="" class="stock__block-fon">
+                                <div class="stock__block-body">
+                                    <img src="./images/stock/block2-icon.svg" alt="" class="stock__block-image2" width="99" height="99" loading="lazy">
+                                    <div class="stock__text">
+                                        <h3 class="stock__text-name">Семейные скидки</h3>
+                                        <p class="stock__text-description">Родитель + ребёнок, 2 ребёнка</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stock__block3">
+                                <img src="./images/stock/block3-fon.svg" alt="" class="stock__block-fon" style="margin-top: 8px;">
+                                <div class="stock__block-body">
+                                    <img src="./images/stock/block3-icon.svg" alt="" class="stock__block-image3" width="99" height="99" loading="lazy">
+                                    <div class="stock__text">
+                                        <h3 class="stock__text-name">Приведи друга</h3>
+                                        <p class="stock__text-description">и получи 2 000 ₽ в подарок</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stock__button">
+                            <div class="button">
+                                <button class="stock__button-sign button__sign">Записаться</button>
+                                <a href="/" class="button__whatsapp">
+                                    <img class="button-whatsapp__image" src="./images/wp.svg" alt="" width="32" height="32" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section__body">
+                <div class="carousel container">
+                    <ol class="carousel-wrapper">
+                      <li class="carousel-slide">
+                        <img src="./images/carousel/IMG_9901.svg" alt="Image 1">
+                      </li>
+                      <li class="carousel-slide">
+                        <img src="./images/carousel/IMG_9922.svg" alt="Image 2">
+                      </li>
+                      <li class="carousel-slide">
+                        <img src="./images/carousel/IMG_9939.svg" alt="Image 3">
+                      </li>
+                      <li class="carousel-slide">
+                        <img src="./images/carousel/IMG_9946.svg" alt="Image 4">
+                      </li>
+                      <li class="carousel-slide">
+                        <img src="./images/carousel/IMG_9888.svg" alt="Image 6">
+                      </li>
+                      <li class="carousel-slide">
+                        <img src="./images/carousel/IMG_9948.svg" alt="Image 7">
+                      </li>
+                      <li class="carousel-slide">
+                        <img src="./images/carousel/IMG_9962.svg" alt="Image 8">
+                      </li>
+                      <li class="carousel-slide">
+                        <img src="./images/carousel/IMG_9989.svg" alt="Image 10">
+                      </li>
+                    </ol>
+                </div>       
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section__body">
+                <div class="license">
+                    <div class="license__image">
+                        <img  src="./images/license.svg" alt=""  loading="lazy">
+                    </div>
+                    <div class="license__body">
+                        <img src="./images/license-fon1.svg" alt="" class="license__fon1">
+                        <img src="./images/license-fon2.svg" alt="" class="license__fon2">
+                        <h1 class="license__title">Лицензия дополнительного образования <u>№ 7-Б/00420</u></h1>
+                        <div class="license__button">
+                            <div class="button">
+                                <button class="button__sign">Записаться</button>
+                                <a href="/" class="button__whatsapp button__whatsapp--transparent">
+                                    <img class="button-whatsapp__image" src="./images/wp.svg" alt="" width="32" height="32" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section__body">
+                <div class="reviews">
+                    <div class="reviews__body">
+                        <div class="reviews__title">Отзывы</div>
+                        <div class="reviews__grid">
+                            <div class="reviews__block1">
+                                <div class="reviews__block">
+                                    <div class="reviews__name">Иванова Ольга</div>
+                                    <img src="./images/rating-stars.svg" alt="" class="reviews__stars">
+                                    <div class="reviews__content">
+                                        <p>Обратилась к репетитору по математике для подготовки к экзаменам, и осталась очень довольна! Занятия были структурированными и интересными. Репетитор не только объяснял сложные темы доступным языком, но и помогал развивать уверенность в своих силах. Благодаря его поддержке и индивидуальному подходу я значительно улучшила свои знания и результаты. Рекомендую всем, кто хочет получить качественную помощь в учебе!</p>
+                                    </div>
+                                    <button class="reviews__more">Читать ещё</button>
+                                    <div class="reviews__data">
+                                        <p>7 октября 2023 г.</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__block">
+                                    <div class="reviews__name">Зайцева Анастасия</div>
+                                    <img src="./images/rating-stars.svg" alt="" class="reviews__stars">
+                                    <div class="reviews__content">
+                                        <p>Максим, хороший репетитор по математике! Занятия проходят интересно и комфортно. У репетира хорошо проработаны все уроки. Прекрасно объясняет материал)))</p>
+                                    </div>
+                                    <button class="reviews__more">Читать ещё</button>
+                                    <div class="reviews__data">
+                                        <p>24 сентября 2023 г.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__block2">
+                                <div class="reviews__block">
+                                    <div class="reviews__name">Королёв Александр</div>
+                                    <img src="./images/rating-stars.svg" alt="" class="reviews__stars">
+                                    <div class="reviews__content">
+                                        <p>Занималась химией, преподаватель все подробно объяснял, очень нравилось, что на занятиях не только решали типовые задания, но и разбирали какие-то интересные примеры, экзамен сдала на 5, спасибо!</p>
+                                    </div>
+                                    <button class="reviews__more">Читать ещё</button>
+                                    <div class="reviews__data">
+                                        <p>1 октября 2023 г.</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__block">
+                                    <div class="reviews__name">Лебедев Виктор</div>
+                                    <img src="./images/rating-stars.svg" alt="" class="reviews__stars">
+                                    <div class="reviews__content">
+                                        <p>Очень хорошее место для подготовки к ЕГЭ. Преподаватели хорошо подходят к ученикам и находят хороший метод обучения, что становится легче. Репетитор по математике очень хорошо объясняет, понятнее чем в школе )) хотя я не особо понимаю математику,но то как он просто это объясняет,то мне становится легче понимать задания , хоть и не с первого раза, но все таки. Он ещё и добрый и всегда поможет если попросить ,и он ещё объяснит понятно. Репетитор по английскому идеально доносит информацию, очень легко и всё понятно. Мне очень нравится ходить на ее занятия, буду скучать когда сдам ЕГЭ. В общем я советую</p>
+                                    </div>
+                                    <button class="reviews__more">Читать ещё</button>
+                                    <div class="reviews__data">
+                                        <p>18 сентября 2023 г.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__block3">
+                                <div class="reviews__block">
+                                    <div class="reviews__name">Лебедев Виктор</div>
+                                    <img src="./images/rating-stars.svg" alt="" class="reviews__stars">
+                                    <div class="reviews__content">
+                                        <p>замечательное место! очень удобное расположение, приемлимые цены. Отдельно хочется выразттб благодарность Максу, готовлюсь с ним к профилю, объясняет очень просто, держит связь с учеником (можно легко обсудить все непонятные моменты), и в целом очень хорошо готовит, с оптимизмом и юмором.) всем рекомендую это место!!</p>
+                                    </div>
+                                    <button class="reviews__more">Читать ещё</button>
+                                    <div class="reviews__data">
+                                        <p>18 сентября 2023 г.</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__block">
+                                    <div class="reviews__name">Лебедев Виктор</div>
+                                    <img src="./images/rating-stars.svg" alt="" class="reviews__stars">
+                                    <div class="reviews__content">
+                                        <p>Очень благодарна центру за хорошую подготовку моего ребёнка к сдаче ЕГЭ по физике. Замечательные преподаватели и руководство, которое отвечает за организацию подготовительного процесса и подбирает удобный график для занятий. Благодаря высоким баллам по экзамену - поступили на бюджет. Спасибо Вам большое!</p>
+                                    </div>
+                                    <button class="reviews__more">Читать ещё</button>
+                                    <div class="reviews__data">
+                                        <p>18 сентября 2023 г.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section__body">
+                <div class="price">
+                    <img src="./images/course-fon.svg" alt=""  class="price__fon" loading="lazy">
+                    <img src="./images/shining_star.svg" alt="" class="price__shining-star">
+                    <div class="price__body">
+                        <img src="./images/shining_star.svg" alt="" class="price__shining-star">
+                        <div class="price__text">
+                            <h1 class="price__title">Стоимость</h1>
+                            <p class="price__description">1 000 ₽ в подарок за первое занятие</p>
+                        </div>
+                        <div class="price__grid">
+                            <div class="price__cell">
+                                <h3 class="price__cell-title">Индивидуальные занятия </h3>
+                                <p class="price__cell-description">Подберем учебный план под ваши цели и задачи</p>
+                                <div class="price__number">
+                                    <h3 class="price__number-main">2 200 ₽</h3>
+                                    <p class="price__number-minor">60 мин.</p>
+                                </div>
+                            </div>
+                            <div class="price__cell">
+                                <h3 class="price__cell-title">Групповые занятия </h3>
+                                <p class="price__cell-description">Группы от 2 до 5 человек формируются по уровню знаний</p>
+                                <div class="price__number">
+                                    <h3 class="price__number-main">1 300 ₽</h3>
+                                    <p class="price__number-minor">60 мин.</p>
+                                </div>
+                            </div>
+                            <div class="price__cell">
+                                <h3 class="price__cell-title">Онлайн обучение</h3>
+                                <p class="price__cell-description">Подготовка к школе по различным предметам для детей
+                                    от 4 лет!</p>
+                                <div class="price__number">
+                                    <h3 class="price__number-main">1 800 ₽</h3>
+                                    <p class="price__number-minor">60 мин.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./images/two_star.svg" alt="" class="price__star">
+                        <div class="price__button">
+                            <div class="button">
+                                <button class="price__button-sign button__sign">Записаться</button>
+                                <a href="/" class="button__whatsapp button__whatsapp--transparent">
+                                    <img class="button-whatsapp__image" src="./images/wp.svg" alt="" width="32" height="32" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section__body">
+                <div class="contacts">
+                    <div class="contacts__body">
+                        <div class="contacts__info">
+                            <h1 class="contacts__info-title">Контакты</h1>
+                            <div class="contacts__info-tel">
+                                <div class="contacts__tel-long">
+                                    <img src="./images/tel.svg" alt="" width="20" height="20" loading="lazy">
+                                    <a href="tel: +7 (914) 704-36-66"> +7 (914) 704-36-66 </a>
+                                </div>
+                                <div class="contacts__tel-short">
+                                    <img src="./images/tel.svg" alt="" width="20" height="20" loading="lazy">
+                                    <a href="tel: +7 (914) 704-36-66"> 274-36-66 </a>
+                                </div>
+                            </div>
+                            <div class="contacts__info-adress">
+                                <h3 class="contacts__adress-title">Филиалы</h3>
+                                <div class="contacts__adress-point">
+                                    <div class="contacts__adress-name">
+                                        <img src="./images/adress.svg" alt="" width="20" height="20" loading="lazy">
+                                        <a href="/"> ул. Русская 59/1</a>
+                                    </div>
+                                    <div class="contacts__adress-name">
+                                        <img src="./images/adress.svg" alt="" width="20" height="20" loading="lazy">
+                                        <a href="/"> ул. Светланская 150 стр. 2</a>
+                                    </div>
+                                    <div class="contacts__adress-name">
+                                        <img src="./images/adress.svg" alt="" width="20" height="20" loading="lazy">
+                                        <a href="/">пр-т 100-летия Владивостока 40а</a>
+                                    </div>
+                                    <div class="contacts__adress-name">
+                                        <img src="./images/adress.svg" alt="" width="20" height="20" loading="lazy">
+                                        <a href="/"> ул. Адмирала Горшкова 69 (Снеговая Падь)</a>
+                                    </div>
+                                    <div class="contacts__adress-name">
+                                        <img src="./images/adress.svg" alt="" width="20" height="20" loading="lazy">
+                                        <a href="/"> ул. Крыгина, 40</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__form"> 
+                            <img src="./images/pice.svg" alt="" class="contacts__pice">
+                            <div class="contacts__form-text">
+                                <h1 class="contacts__form-title">Оставь заявку</h1>
+                                <p class="contacts__description">1000 ₽ в подарок на первое занятие</p>
+                            </div>
+                            <div class="contacts__form-input">
+                                <form action="" class="contacts__login" id="contactForm">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        class="contacts__form-name"
+                                        name="name"
+                                        placeholder="Имя (обязательно)"
+                                        required
+                                    />
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        class="contacts__form-phone"
+                                        placeholder="Телефон (обязательно)"
+                                        pattern="^\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$"
+                                        required
+                                    />
+                                    <input
+                                        type="text"
+                                        id="subject"
+                                        name="subject"
+                                        class="contacts__form-subject"
+                                        placeholder="Укажите предмет (необязательно)"
+                                    />
+                                </form>
+                            </div>
+                            <div class="contacts__form-button">
+                                <div class="button">
+                                    <button type="submit" class="contacts__button-sign button__sign" id="submitBtn" disabled>Записаться</button>
+                                </div>
+                                <p class="contacts__form-personal">
+                                    Нажимая на кнопку “Записаться”, Вы даете согласие на обработку
+                                    <a href="#" class="contacts__form-link">персональных данных</a>.
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__header-inner  header__inner container">
+                <a href="/" class="header__logo logo">
+                    <img class="logo__image" src="./images/logo.svg" alt="Учебная империя" width="273" height="52" loading="lazy">
+                </a>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">Курсы</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">Цены</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">Акции</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">Отзывы</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel: +7 (914) 704-36-66" class="header__contact contact hidden-mobile"> +7 (914) 704-36-66 </a>
+                <button 
+                    class="button__burger-menu burger-button visible-mobile"
+                    type="button"
+                    onclick="mobileOverlay.showModal()">
+                    <span class="visually-hidden">Open navigation menu</span>
+                </button>
+            </div>
+            <div class="footer__mobile">
+                <img class="logo__image" src="./images/logo.svg" alt="Учебная империя" width="273" height="52" loading="lazy">
+                <ul class="mobile-overlay__list">
+                    <li class="mobile-overlay__item">
+                        <a href="/" class="mobile-overlay__link">Курсы</a>
+                        <a href="/" class="mobile-overlay__arrow-button">
+                            <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="/" class="mobile-overlay__link">Цены</a>
+                        <a href="/" class="mobile-overlay__arrow-button">
+                            <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="/" class="mobile-overlay__link">Акции</a>
+                        <a href="/" class="mobile-overlay__arrow-button">
+                            <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="/" class="mobile-overlay__link">Отзывы</a>
+                        <a href="/" class="mobile-overlay__arrow-button">
+                            <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="/" class="mobile-overlay__link">О нас</a>
+                        <a href="/" class="mobile-overlay__arrow-button">
+                            <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+                <div class="mobile-overlay__contact">
+                    <a href="tel: +7 (914) 704-36-66" class="mobile-overlay__contact-tel"> +7 (914) 704-36-66 </a>
+                    <a href="/" class="mobile-overlay__contact-whatsapp">
+                        <img class="wattsap__image" src="./images/whatsapp.svg" alt="" width="24" height="24" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__addition">
+                <p>© 2024 ООО «Учебная империя»</p>
+                <a href="/" class="footer__link">
+                    <p>Политика обработки персональных данных</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <dialog class="mobile-overlay visible-mobile"  id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <a href="/" class="mobile-overlay__logo">
+                <img class="mobile-overlay__logo-image" src="./images/logo.svg" alt="Учебная империя" width="296" height="40" loading="lazy">
+            </a>
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <div class="mobile-overlay__contact">
+                <a href="tel: +7 (914) 704-36-66" class="mobile-overlay__contact-tel"> +7 (914) 704-36-66 </a>
+                <a href="/" class="mobile-overlay__contact-whatsapp">
+                    <img class="wattsap__image" src="./images/whatsapp.svg" alt="" width="24" height="24" loading="lazy">
+                </a>
+            </div>
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Курсы</a>
+                    <a href="/" class="mobile-overlay__arrow-button">
+                        <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                    </a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Цены</a>
+                    <a href="/" class="mobile-overlay__arrow-button">
+                        <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                    </a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Акции</a>
+                    <a href="/" class="mobile-overlay__arrow-button">
+                        <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                    </a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Отзывы</a>
+                    <a href="/" class="mobile-overlay__arrow-button">
+                        <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                    </a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">О нас</a>
+                    <a href="/" class="mobile-overlay__arrow-button">
+                        <img class="mobile-overlay__arrow-button-image" src="./images/arrow.svg" alt="" width="6" height="11" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-overlay__button button__sign" type="button">Записаться</button>
+        </div>
+    </dialog>
+    <script src="js/carousel.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/form-main.js"></script> 
+    <script src="js/form.js"></script>   
+    <script src="js/toggle.js"></script> 
+</body>
+</html>
